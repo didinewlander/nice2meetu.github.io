@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Board Game - In Production</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Rubik:wght@700&display=swap");
+
+        body {
+            font-family: "Rubik", sans-serif;
+            background-color: #4e92eb;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 100px 0;
+        }
+
+        .content {
+            flex: 1;
+            padding-right: 50px;
+            text-align: center;
+        }
+
+        .hero {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero h1, .description h1, .status h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .description,
+        .status {
+            font-family: "Rubik Wet Paint";
+        }
+
+        .status {
+            background-color: #ffc107;
+            color: #fff;
+            font-family: "Rubik";
+        }
+
+        footer {
+            background-color: #0d3e76;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @keyframes rotateImage {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #boardgame-img {
+            margin-top: 30px;
+            max-width: 80%;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            animation: rotateImage 30s linear infinite;
+        }
+
+        /* Responsive for smaller devices */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column-reverse;
+            }
+
+            .content {
+                padding-right: 0;
+            }
+
+            .hero h1, .description h1 {
+                font-size: 2rem;
+            }
+
+            #boardgame-img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container flex-container">
+        <div class="content">
+            <h1>נעים להכיר</h1>
+            <p>המשחק שיהפוך כל היכרות לחוויה</p>
+            <section class="description">
+                <h1>האתר בבנייה</h1>
+            </section>
+            <section class="status">
+                <h2>ניתן ליצור קשר במייל</h2>
+                <h2>naimleacir@gmail.com</h2>
+            </section>
+        </div>
+        <div class="hero">
+            <img src="נעים להכיר 2 3.png" alt="Dating Board Game Image" id="boardgame-img">
+        </div>
+    </div>
+    <footer>
+        <p>נעים להכיר - מכאן הכל מתחיל</p>
+    </footer>
+</body>
+</html>
